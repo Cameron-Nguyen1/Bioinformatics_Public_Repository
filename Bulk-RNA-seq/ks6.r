@@ -5,13 +5,13 @@ option_list = list(
               help="Study Design file name.", metavar="character"),
     make_option(c("--database"), type="character", default=NULL, dest="database",
     help="Database like EnsDb.Hsapiens.v86 or EnsDb.Mmusculus.v79", metavar="character"),
-    make_option(c("--expression"), type="character", default=NULL, help="Expression that defines a comparison using sample group names. e.g. infection=EBOV_CC0XX-MOCK_CC0XX", metavar="character"),
+    make_option(c("--expression"), type="character", default=NULL, help="Expression that defines a comparison using sample group names. e.g. infection=Group1-Group2", metavar="character"),
    make_option(c("--ex_eh"), type="character", default=NULL,
-              help="Expression that defines: Average of healthy samples // e.g.
-              (IFNAR1_100nM_72hpi_97+IFNAR1_100nM_72hpi_98+IFNAR1_100nM_72hpi_99)/3", metavar="character"),
+              help="Expression that defines: Average of Group 1 samples // e.g.
+              (Group1_97+Group1_98+Group1_99)/3", metavar="character"),
   make_option(c("--ex_uh"), type="character", default=NULL,
-              help="Expression that defines: Average of unheahlthy samples // e.g.
-              (HI7_100nM_72hpi_85+HI7_100nM_72hpi_86+HI7_100nM_72hpi_87)/3", metavar="character"),
+              help="Expression that defines: Average of Group 2 samples // e.g.
+              (Group2_85+Group2_86+Group2_87)/3", metavar="character"),
   make_option(c("--species"), type="character", default=NULL,
               help="Genus Species from which samples are taken from. Format: \"Mus Musculus\"", metavar="character"),
   make_option(c("--out"), type="character", default=NULL,
@@ -287,7 +287,7 @@ res2 = k$visualize(res1)
 res3 = k$pca(res1,res2)
 print("Visualization complete.")
 ex = p$expression
-print("Starting VP. \n")
+print("Starting VP.")
 res4 = k$vp(res1,res2,res2[[3]])
 print("VP - OK / HM Begin")
 res5 = k$hm(res2[[3]],res4)
