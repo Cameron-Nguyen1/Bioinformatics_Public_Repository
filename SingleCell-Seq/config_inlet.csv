@@ -1,0 +1,30 @@
+[gene-expression],,,,
+reference,/path/to/cellranger/refgenome,,,
+no-bam,TRUE,,,
+min-assignment-confidence,0.5,,,
+,,,,
+[libraries],,,,
+fastq_id,fastqs,lanes,feature_types,physical_library_id
+GEX1_ID_TCTTACTTGC-TGACCTCTAG,/path/to/fastqs,any,Gene Expression,GEX
+GEX2_ID_ATGGGTGAAA-CTTGGGAATT,/path/to/fastqs,any,Gene Expression,GEX
+GEX3_ID_CGAATATTCG-CTGGAAGCAA,/path/to/fastqs,any,Gene Expression,GEX
+GEX4_ID_TCCGGGACAA-GTGAATGCCA,/path/to/fastqs,any,Gene Expression,GEX
+CMO1_ID_TGAGCCGGCA-TGCTGCATGT,/path/to/fastqs,any,Multiplexing Capture,CMO
+CMO2_ID_CGAGGCTGAT-TCGACTTTCT,/path/to/fastqs,any,Multiplexing Capture,CMO
+CMO3_ID_TGGGAAGGGC-ACTAACGATG,/path/to/fastqs,any,Multiplexing Capture,CMO
+CMO4_ID_TTACAGAGGG-GTTTATGGCA,/path/to/fastqs,any,Multiplexing Capture,CMO
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+[samples],,,,
+sample_id,cmo_ids,,,
+1,CMO301,,,
+2,CMO302,,,
+3,CMO303,,,
+4,CMO304,,,
+5,CMO305,,,
+6,CMO306,,,
+7,CMO307,,,
+8,CMO308,,,
