@@ -1,0 +1,26 @@
+{
+    "id": "F36544EE",
+    "path": "~/Kflow/man/kalli_flow.Rd",
+    "project_path": "man/kalli_flow.Rd",
+    "type": "r_doc",
+    "hash": "249148860",
+    "contents": "",
+    "dirty": false,
+    "created": 1666292515758.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "39,1",
+        "scrollLine": "32"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1666292641,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1666292641911,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,33 @@
+Package: Kflow
+Type: Package
+Title: Kflow library designed to streamline DIYTranscriptomic's Kallisto Work Flow
+Version: 1.0.0
+Author: Cameron Nguyen
+Maintainer: Cameron Nguyen <came@ad.unc.edu>
+Description: Kflow, a very high-level library, breaks up DIYTranscriptomic's Kallisto Work Flow into several sections based on the analysis being performed at each step. Instantiate the class and call the functions in order to render the products of the work flow.
+License: blank
+Encoding: UTF-8
+LazyData: true
+Imports:
+  methods,
+  tidyverse,
+  tximport,
+  ensembldb,
+  EnsDb.Hsapiens.v86,
+  edgeR,
+  matrixStats,
+  cowplot,
+  DT,
+  plotly,
+  gt,
+  limma,
+  GSEABase,
+  Biobase,
+  GSVA,
+  gprofiler2,
+  clusterProfiler,
+  msigdbr,
+  pheatmap,
+  enrichplot,
+  IsoformSwitchAnalyzeR,
+  BSgenome.Hsapiens.UCSC.hg38

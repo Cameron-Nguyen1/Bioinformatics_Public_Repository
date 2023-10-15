@@ -1,0 +1,26 @@
+{
+    "id": "B56D9469",
+    "path": "~/Documents/R_Transcriptomics_Example/k_flow_class_vc2.R",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1665582103202.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "23,6",
+        "scrollLine": "17"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1666292305,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1666292305189,
+    "read_only": false,
+    "read_only_alternatives": []
+}
