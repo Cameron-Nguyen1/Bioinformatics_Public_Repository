@@ -9,7 +9,6 @@ module load r/4.2.2
 base=$(pwd)
 export R_LIBS=/example/path/R_LIBS:$R_LIBS 
 
-
 Rscript ks6.R --studydesign Study_Design.txt --database EnsDb.Mmusculus.v79 \
 --expression "infection=Group1-Group2" \
 --ex_uh "(Group2_1+Group2_2+Group2_3+Group2_4+Group2_5)/5" \
