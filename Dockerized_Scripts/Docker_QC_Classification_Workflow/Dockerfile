@@ -16,7 +16,7 @@ RUN rm -rf /opt/conda/miniconda.sh
 RUN /opt/conda/bin/conda install -c bioconda samtools
 RUN /opt/conda/bin/conda install -c bioconda fastqc
 
-#install troublemakers from source
+#Non-conda installs
 RUN wget http://opengene.org/fastp/fastp -O /opt/fastp && chmod a+x /opt/fastp
 WORKDIR /opt/
 RUN git clone https://github.com/DerrickWood/kraken2.git
