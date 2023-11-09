@@ -27,7 +27,7 @@ for r1 in *.trim.fastq
 do
     #R2=$(echo $R1 | sed -e 's/R1/R2/g') #PE
     out=${r1::-11}
-    bowtie2 --phred33 -q -p 12 -x /work/users/c/a/came/Virs/Reads/bt2_genome/SARS2 -U $r1 -S $out".output.sam" --un $out".unmapped.fastq"
+    bowtie2 --phred33 -q -p 12 -x /path/to/index -U $r1 -S $out".output.sam" --un $out".unmapped.fastq"
     samtools view -S -b $out".output.sam" > $out".output.bam"
     samtools sort $out".output.bam" -o $out".sorted.bam"
     samtools index $out".sorted.bam"
@@ -36,5 +36,5 @@ done
 
 for var in *.unmapped.fastq
 do
-        kraken2 --use-names --threads 12 --db /nas/longleaf/apps/kraken2/2.1.2/KRAKEN2-HS-FUNGI-MM-DB --report ${var::-40}".report" $var > ${var::-40}".kraken"
+        kraken2 --use-names --threads 12 --db /path/to/KRAKEN2-HS-FUNGI-MM-DB --report ${var::-40}".report" $var > ${var::-40}".kraken"
 done
