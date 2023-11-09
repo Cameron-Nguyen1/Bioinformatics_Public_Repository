@@ -1,10 +1,4 @@
 #!/bin/bash
-#SBATCH -p general
-#SBATCH -N 1
-#SBATCH --mem=80g
-#SBATCH -n 12
-#SBATCH -t 48:00:00
-
 #Load libraries for processing data
 module load kraken
 module load gcc/11.2.0

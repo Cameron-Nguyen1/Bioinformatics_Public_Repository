@@ -1,14 +1,4 @@
 #!/bin/bash
-#SBATCH -p general
-#SBATCH -N 1
-#SBATCH --mem=80g
-#SBATCH -n 12
-#SBATCH -t 48:00:00
-#SBATCH --mail-type=END,FAIL # notifications for job done & fail
-#SBATCH --mail-user=came@unc.edu # send-to address
-#SBATCH -o QC_stdout_count.txt
-#SBATCH -e QC_stderr_count.txt
-
 #Load libraries for processing data
 module load kraken
 module load gcc/11.2.0
