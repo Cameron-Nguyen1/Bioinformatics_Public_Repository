@@ -7,10 +7,9 @@ option_list = list(
   make_option(c("--Point_Sizes"), type="character", default="5,2",help="Point sizes of Antigen and Sera coordinates on the AC Map. Antigen,Sera. Example: \"5,2\" or \"4.5,1.5\"", metavar="character"),
   make_option(c("--Transparency"), type="character", default=".8,.4",help="Point transparency of Antigen and Sera coordinates on the AC Map. Antigen,Sera. Example: \".9,.5\" or \".7,.4\"", metavar="character"),
   make_option(c("--Antigen_Overprint"), type="character", default="FALSE",help="Paint Antigens over Sera? TRUE or FALSE.", metavar="character"),
-  make_option(c("--Install"),type="character", default="FALSE",help="Install flag, usually set alongside submission of shell script using -i flag.", metavar="character")
 )
 p = parse_args(OptionParser(option_list=option_list))
-dep = c("devtools","ggplot2","stringr","reshape2","RColorBrewer","paletteer","Racmacs")
+dep = c("ggplot2","stringr","reshape2","RColorBrewer","paletteer","Racmacs")
 lapply(dep,library,character.only=TRUE)
 
 dir.create(as.character(p[4]))
