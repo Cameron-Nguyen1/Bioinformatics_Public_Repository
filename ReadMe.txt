@@ -1,5 +1,5 @@
-This repository is a collection of scripts, guides, and pipelines (developed at UNC-Chapel Hill) 
-used to facilitate bioinformatics work.
+THIS REPO IS BEING ARCHIVED IN FAVOR OF CREATING A REPO FOR EACH APPLICATION/SCRIPT/PIPELINE/ETC
 
-This repository is maintained by Cameron Nguyen.
-Some items are no longer maintained.
+##### --------- https://github.com/Cameron-Nguyen1 --------- #####
+
+PLEASE VISIT MY PROFILE TO SEE A LIST OF PUBLICALLY AVAILABLE SOFTWARE THAT I HAVE PRODUCED MORE RECENTLY.
